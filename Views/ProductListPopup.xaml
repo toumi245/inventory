@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               x:Class="CodeABarre.Views.ProductListPopup">
+    <ScrollView>
+        <VerticalStackLayout Margin="10"
+                             HorizontalOptions="Center"
+                             WidthRequest="{OnIdiom Phone=340, Tablet=500, Desktop=600}">
+            <dxe:ComboBoxEdit x:Name="InventoryPicker"
+                              LabelText="Select Inventory"
+                              WidthRequest="200"
+                              HorizontalOptions="FillAndExpand"
+                              Margin="0,5"/>
+            <CollectionView x:Name="ProductsCollectionView"
+                            ItemsSource="{Binding Products}"
+                            SelectionMode="Multiple"
+                            Margin="0,10"
+                            HeightRequest="300"
+                            HorizontalOptions="FillAndExpand">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="10" Margin="0,5" CornerRadius="8" BackgroundColor="#F3F4F6">
+                            <HorizontalStackLayout>
+                                <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" VerticalOptions="Center"/>
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Name, StringFormat='Name: {0}'}" FontSize="16"/>
+                                    <Label Text="{Binding ActualStock, StringFormat='Stock: {0}'}" FontSize="16"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button Text="Add Selected to Inventory"
+                    Clicked="OnAddToInventoryClicked"
+                    BackgroundColor="#10B981"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    HeightRequest="44"
+                    CornerRadius="8"
+                    HorizontalOptions="FillAndExpand"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</toolkit:Popup> 

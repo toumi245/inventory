@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+	x:Class="CodeABarre.MainPage"
+	BackgroundColor="#1a1a1a">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <!-- Camera View -->
+        <zxing:CameraBarcodeReaderView
+			Grid.Row="0" Grid.RowSpan="3"
+			x:Name="barcodeView"
+			BarcodesDetected="BarcodesDetected"
+			CameraLocation="{Binding CameraLocation}"
+			IsTorchOn="{Binding IsTorchOn}" />
+
+        <!-- Scan Frame Overlay -->
+        <Frame 
+            Grid.Row="1"
+            BorderColor="#0078D7"
+            BackgroundColor="Transparent"
+            WidthRequest="280"
+			HeightRequest="180"
+            HorizontalOptions="Center"
+			VerticalOptions="Center"
+            HasShadow="False"
+			CornerRadius="12"
+			IsClippedToBounds="True"
+            Margin="0,0,0,20"/>
+
+        <!-- Scan Instructions -->
+        <Label
+           Grid.Row="1"
+           Text="📱 Alignez le code-barres dans le cadre"
+           TextColor="White"
+           FontSize="16"
+           FontAttributes="Bold"
+           HorizontalOptions="Center"
+           VerticalOptions="End"
+           Margin="0,0,0,80"
+           BackgroundColor="#80000000"
+           Padding="15,8"/>
+
+        <!-- Top Status Bar -->
+        <Grid Grid.Row="0"
+			BackgroundColor="#80000000"
+            RowDefinitions="Auto,Auto"
+            Padding="20,40,20,20">
+            <Label x:Name="ResultLabel" 
+                   Grid.Row="0" 
+                   Text="{Binding ResultLabel}" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   TextColor="White"
+                   FontSize="16"
+                   FontAttributes="Bold" />
+            <Label x:Name="ResultName" 
+                   Grid.Row="1" 
+                   Text="{Binding ResultName}" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   TextColor="#4CAF50"
+                   FontSize="14"
+                   FontAttributes="Italic"
+                   Margin="0,5,0,0" />
+        </Grid>
+
+        <!-- Bottom Control Panel -->
+        <Grid Grid.Row="2"
+			BackgroundColor="#80000000"
+			Padding="20"
+			ColumnDefinitions="Auto,*,Auto,Auto,Auto"
+            ColumnSpacing="15">
+
+            <!-- Camera Switch Button -->
+            <Button Text="🔄️" 
+                    Grid.Column="0" 
+                    BackgroundColor="#0078D7" 
+                    TextColor="White"
+                    CornerRadius="25" 
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    FontSize="20"
+                    Clicked="SwitchCameraButton_Clicked" />
+
+            <!-- Barcode Generator -->
+            <Frame Grid.Column="1"
+                   BackgroundColor="White"
+                   CornerRadius="12"
+                   Padding="10"
+                   HasShadow="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <zxing:BarcodeGeneratorView
+				    x:Name="barcodeGenerator"
+				    HorizontalOptions="Center"
+				    VerticalOptions="Center"
+				    HeightRequest="80"
+				    WidthRequest="80"
+				    ForegroundColor="#1a1a1a"
+				    Format="{Binding CurrentFormat}"
+				    Value="{Binding CurrentValue}"
+				    BarcodeMargin="1" />
+            </Frame>
+
+            <!-- Torch Button -->
+            <Button Text="💡" 
+                    Grid.Column="2" 
+                    BackgroundColor="#FF9800" 
+                    TextColor="White"
+                    CornerRadius="25" 
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    FontSize="20"
+                    Clicked="TorchButton_Clicked" />
+
+            <!-- Reset Button -->
+            <Button Text="🔄" 
+                    Grid.Column="3" 
+                    BackgroundColor="#F44336" 
+                    TextColor="White"
+                    CornerRadius="25" 
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    FontSize="20"
+                    Clicked="ResetButton_Clicked" />
+            <Button Text="liste" 
+                    Grid.Column="4" 
+                    BackgroundColor="Green" 
+                    CornerRadius="25" 
+                     WidthRequest="50"
+                    HeightRequest="50"
+                   
+                    BorderColor="Black" 
+                    Clicked="ShowListButton_Clicked" />
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

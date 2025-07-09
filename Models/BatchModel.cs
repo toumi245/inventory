@@ -1,0 +1,98 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySqlConnector;
+
+namespace CodeABarre.Models
+{
+    public class BatchModel
+    {
+        public int Id { get; set; }
+        public string Barcode { get; set; }
+        public string Code { get; set; }
+
+        private static ConnectionModel _connection;
+
+        public static void SetConnection(ConnectionModel connection)
+        {
+            _connection = connection;
+        }
+
+        public static ConnectionModel GetConnection()
+        {
+            if (_connection == null)
+                throw new InvalidOperationException("ConnectionModel is not set. Call SetConnection first.");
+            return _connection;
+        }
+        public static async Task<BatchModel?> GetBatchByBarcodeAsync(string barcode)
+        {
+            try
+            {
+                if (_connection == null) throw new InvalidOperationException("ConnectionModel is not set. Call SetConnection first.");
+                using var connection = new MySqlConnection(_connection.GetConnectionString());
+                await connection.OpenAsync();
+
+                var command = new MySqlCommand("SELECT id, code FROM commercial_batch WHERE barcode = @barcode LIMIT 1;", connection);
+                command.Parameters.AddWithValue("@barcode", barcode);
+
+                using var reader = await command.ExecuteReaderAsync();
+                if (await reader.ReadAsync())
+                {
+                    return new BatchModel
+                    {
+                        Id = Convert.ToInt32(reader["id"]),
+                        Barcode = barcode,
+                        Code= reader.GetString("code"),
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erreur de base de données : {ex.Message}");
+            }
+            return null;
+        }
+        public static async Task<List<string>> GetAllBatchAsync()
+        {
+            if (_connection == null) throw new InvalidOperationException("ConnectionModel is not set. Call SetConnection first.");
+            var lots = new List<string>();
+            using var connection = new MySqlConnection(_connection.GetConnectionString());
+            await connection.OpenAsync();
+            var command = new MySqlCommand("SELECT code FROM commercial_batch LIMIT 1000 OFFSET 1932  ;", connection);
+            using var reader = await command.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                lots.Add(reader[0].ToString());
+            }
+            return lots;
+        }
+        public static async Task<BatchModel?> GetBatchByNameAsync(string code)
+        {
+            if (_connection == null) throw new InvalidOperationException("ConnectionModel is not set. Call SetConnection first.");
+            using var connection = new MySqlConnection(_connection.GetConnectionString());
+            await connection.OpenAsync();
+
+            var command = new MySqlCommand("SELECT id,barcode,code FROM commercial_batch WHERE code = @code LIMIT 1;", connection);
+            command.Parameters.AddWithValue("@code", code);
+
+            using var reader = await command.ExecuteReaderAsync();
+            if (await reader.ReadAsync())
+            {
+                return new BatchModel
+                {
+                    Id = Convert.ToInt32(reader["id"]),
+                    Barcode = reader["barcode"].ToString(),
+                    Code = reader["code"].ToString(),
+                };
+            }
+            return null;
+        }
+        public static class BatchSession
+        {
+            public static ObservableCollection<BatchModel> ScannedBatch { get; } = new();
+        }
+    }
+}
