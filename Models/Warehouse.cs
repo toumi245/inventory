@@ -36,7 +36,8 @@ namespace CodeABarre.Models
                 using var conn = new MySqlConnection(_connection.GetConnectionString());
                 await conn.OpenAsync();
 
-                var cmd = new MySqlCommand("SELECT id, name FROM commercial_warehouse", conn);
+                var cmd = new MySqlCommand("SELECT id, name FROM commercial_warehouse ", conn);
+                cmd.CommandTimeout = 60;
                 using var reader = await cmd.ExecuteReaderAsync();
 
                 while (await reader.ReadAsync())

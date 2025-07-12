@@ -61,7 +61,9 @@
 
                     <!-- Warehouse -->
                     <VerticalStackLayout Spacing="6">
-                        <Label Text="🏢 Warehouse" 
+                        <Label x:Name="WarehouseIdLabe" Text="Warehouse ID:" FontAttributes="Bold" />
+                        <Label x:Name="WarehouseIdLabel"
+                             Text="🏢 Warehouse ID" 
                                FontAttributes="Bold" 
                                FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
                                TextColor="#374151" />
@@ -70,14 +72,7 @@
                                Padding="12" 
                                HasShadow="False"
                                BorderColor="#E5E7EB">
-                            <dxe:ComboBoxEdit x:Name="WarehousePicker"
-                                    LabelText="Select warehouse"
-                                    LabelFontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
-                                    TextFontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
-                                    TextColor="#111827"
-                                    BackgroundColor="Transparent"
-                                    HeightRequest="55"
-                                    VerticalOptions="Center" />
+                            
                         </Frame>
                     </VerticalStackLayout>
 

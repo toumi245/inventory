@@ -5,26 +5,26 @@
              xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
              xmlns:local="clr-namespace:CodeABarre.Views"
              Title="HomePage">
-    <VerticalStackLayout>
-        <VerticalStackLayout>
-        <!-- Place the warehouse picker at the very top -->
-        <Label Text="choose warehouse"
-           FontSize="16"
-           FontAttributes="Bold"
-           HorizontalOptions="Center"
-           Margin="0,20,0,5"/>
-        <dxe:ComboBoxEdit x:Name="WarehousePicker"
-                          LabelText="Select warehouse"
-                          ItemsSource="{Binding Warehouses}"
-                          SelectedItem="{Binding SelectedWarehouse, Mode=TwoWay}"
-                          DisplayMember="Name"
-                          HeightRequest="48"
-                           WidthRequest="220"
-                          VerticalOptions="Start"
-                        Margin="0,0,0,20"/>
-    </VerticalStackLayout>
+    <Grid RowDefinitions="Auto,Auto,*">
+        <!-- Warehouse picker -->
+        <VerticalStackLayout Grid.Row="0" Spacing="10">
+            <Label Text="choose warehouse"
+               FontSize="16"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,20,0,5"/>
+            <dxe:ComboBoxEdit x:Name="WarehousePicker"
+                              LabelText="Select warehouse"
+                              ItemsSource="{Binding Warehouses}"
+                              SelectedItem="{Binding SelectedWarehouse, Mode=TwoWay}"
+                              DisplayMember="Name"
+                               HorizontalOptions="FillAndExpand"
+                              Margin="30,0,30,0"
+                              />
+        </VerticalStackLayout>
+        
         <!-- Switch Button Header -->
-        <Grid ColumnSpacing="30" VerticalOptions="Start" Padding="20,10">
+        <Grid Grid.Row="1" ColumnSpacing="30" VerticalOptions="Start" Padding="20,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -54,255 +54,233 @@
         </Grid>
 
         <!-- Content Container -->
-        <Grid x:Name="ContentContainer">
+        <Grid Grid.Row="2" x:Name="ContentContainer">
 
-            <!-- CONTENT 1: PRODUIT (when switch is OFF) -->
+            <!-- PRODUIT CONTENT -->
             <Grid x:Name="ProduitContent" IsVisible="True">
-                <Grid RowDefinitions="Auto,*,Auto" 
-                    Padding="10"
-                    RowSpacing="10"
-                    BackgroundColor="#F5F5F5">
-
-                    <!-- Header Section -->
-                    <VerticalStackLayout Grid.Row="0" Spacing="10">
-                        <Label Text="Product Inventory"
-                         FontSize="28"
-                         FontAttributes="Bold"
-                         TextColor="#333"
-                         HorizontalOptions="Center" />
-                        <!-- Product Picker Section -->
-                        <Frame CornerRadius="16" 
-                         BackgroundColor="White" 
-                         Padding="20" 
-                         HasShadow="True"
-                         HorizontalOptions="FillAndExpand">
-                            <VerticalStackLayout Spacing="12">
-                                <Label Text="Choose a Product:"
-                                 FontSize="18"
-                                 FontAttributes="Bold"
-                                 TextColor="#444" />
-
-                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
-                                    <dxe:ComboBoxEdit Grid.Column="0"
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <!-- Header & Picker -->
+                <VerticalStackLayout Grid.Row="0" Spacing="10">
+                    <Label Text="Product Inventory"
+                     FontSize="28"
+                     FontAttributes="Bold"
+                     TextColor="#333"
+                     HorizontalOptions="Center" />
+                    <!-- Product Picker Section -->
+                    <Frame CornerRadius="16" 
+                     BackgroundColor="White" 
+                     Padding="20" 
+                     HasShadow="True"
+                     HorizontalOptions="FillAndExpand">
+                        <VerticalStackLayout Spacing="12">
+                            <Label Text="Choose a Product:"
+                             FontSize="18"
+                             FontAttributes="Bold"
+                             TextColor="#444" />
+                            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                                <dxe:ComboBoxEdit Grid.Column="0"
                                   LabelText="Select a product"
                                   ItemsSource="{Binding ProductNames}"
                                   SelectedItem="{Binding SelectedProductName, Mode=TwoWay}"
                                   HorizontalOptions="FillAndExpand"
                                   VerticalOptions="Center" />
-
-                                    <ImageButton Grid.Column="1"
-                                  Source="scan.png"
-                                  BackgroundColor="#28A745"
-                                  WidthRequest="56"
-                                  HeightRequest="56"
-                                  CornerRadius="28"
-                                  VerticalOptions="Center"
-                                  Clicked="OnCameraButtonClicked"
-                                  Padding="10"
-                                  />
+                            </Grid>
+                            <Button Text="➕ Add to List"
+                              Command="{Binding AddProductCommand}"
+                              BackgroundColor="#0078D7"
+                              TextColor="White"
+                              FontAttributes="Bold"
+                              CornerRadius="10"
+                              HeightRequest="48"
+                              HorizontalOptions="Fill"/>
+                            <Button Text="Show All Products"
+                               Clicked="OnShowAllProductsClicked"
+                               BackgroundColor="#0078D7"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               CornerRadius="10"
+                               HeightRequest="48"
+                               HorizontalOptions="Fill"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </VerticalStackLayout>
+                <!-- Product List -->
+                <CollectionView Grid.Row="1"
+                      x:Name="ProductListView"
+                      ItemsSource="{Binding Products}"
+                      SelectionMode="None"
+                      Margin="0,10">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame Padding="15"
+                             Margin="0,6"
+                             CornerRadius="14"
+                             BackgroundColor="White"
+                             HasShadow="True">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnProductTapped" />
+                                </Frame.GestureRecognizers>
+                                <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center">
+                                    <VerticalStackLayout Grid.Column="0" Spacing="4">
+                                        <Label Text="{Binding Name}"
+                                         FontAttributes="Bold"
+                                         FontSize="17"
+                                         TextColor="#222"/>
+                                        <Label Text="Stock: "
+                                         FontAttributes="Bold"
+                                         FontSize="14"
+                                         TextColor="#666" />
+                                        <Label Text="{Binding ActualStock}"
+                                         FontSize="14"
+                                         TextColor="#666"/>
+                                    </VerticalStackLayout>
+                                    <Button Grid.Column="1"
+                                      Text="🗑️"
+                                      Command="{Binding Source={RelativeSource AncestorType={x:Type local:HomePage}}, Path=BindingContext.DeleteProductCommand}"
+                                      CommandParameter="{Binding}"
+                                      BackgroundColor="#FF4444"
+                                      TextColor="White"
+                                      CornerRadius="24"
+                                      FontSize="20"
+                                      HeightRequest="44"
+                                      WidthRequest="44"
+                                      HorizontalOptions="End"
+                                      VerticalOptions="Center"/>
                                 </Grid>
-
-                                <Button Text="➕ Add to List"
-                                  Command="{Binding AddProductCommand}"
-                                  BackgroundColor="#0078D7"
-                                  TextColor="White"
-                                  FontAttributes="Bold"
-                                  CornerRadius="10"
-                                  HeightRequest="48"
-                                  HorizontalOptions="Fill"/>
-                                <Button Text="Show All Products"
-                                   Clicked="OnShowAllProductsClicked"
-                                   BackgroundColor="#0078D7"
-                                   TextColor="White"
-                                   FontAttributes="Bold"
-                                   CornerRadius="10"
-                                   HeightRequest="48"
-                                   HorizontalOptions="Fill"/>
-                            </VerticalStackLayout>
-                        </Frame>
-                    </VerticalStackLayout>
-                    <!-- Product List -->
-                    <CollectionView Grid.Row="1"
-                              x:Name="ProductListView"
-                              ItemsSource="{Binding Products}"
-                              SelectionMode="None"
-                              Margin="0,10">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Frame Padding="15"
-                                 Margin="0,6"
-                                 CornerRadius="14"
-                                 BackgroundColor="White"
-                                 HasShadow="True">
-                                    <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnProductTapped" />
-                                    </Frame.GestureRecognizers>
-
-                                    <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center">
-                                        <VerticalStackLayout Grid.Column="0" Spacing="4">
-                                            <Label Text="{Binding Name}"
-                                             FontAttributes="Bold"
-                                             FontSize="17"
-                                             TextColor="#222"/>
-                                            <Label Text="Stock: "
-                                             FontAttributes="Bold"
-                                             FontSize="14"
-                                             TextColor="#666" />
-                                            <Label Text="{Binding ActualStock}"
-                                             FontSize="14"
-                                             TextColor="#666"/>
-                                        </VerticalStackLayout>
-
-                                        <Button Grid.Column="1"
-                                          Text="🗑️"
-                                          Command="{Binding Source={RelativeSource AncestorType={x:Type local:HomePage}}, Path=BindingContext.DeleteProductCommand}"
-                                          CommandParameter="{Binding}"
-                                          BackgroundColor="#FF4444"
-                                          TextColor="White"
-                                          CornerRadius="24"
-                                          FontSize="20"
-                                          HeightRequest="44"
-                                          WidthRequest="44"
-                                          HorizontalOptions="End"
-                                          VerticalOptions="Center"/>
-                                    </Grid>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-
-                    <!-- Floating Action Button -->
-                    <Button Grid.Row="2"
-                      Text="➕"
-                      Clicked="FloatingButton_Clicked"
-                      FontSize="24"
-                      BackgroundColor="#0078D7"
-                      TextColor="White"
-                      CornerRadius="30"
-                      WidthRequest="60"
-                      HeightRequest="60"
-                      HorizontalOptions="End"
-                      Margin="0,10,0,0"/>
-                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <!-- Floating Action Button -->
+                <Button Grid.Row="2"
+                  Text="➕"
+                  Clicked="FloatingButton_Clicked"
+                  FontSize="24"
+                  BackgroundColor="#0078D7"
+                  TextColor="White"
+                  CornerRadius="30"
+                  WidthRequest="60"
+                  HeightRequest="60"
+                  HorizontalOptions="End"
+                  Margin="0,10,0,0"/>
             </Grid>
             
+            <!-- LOT CONTENT -->
             <Grid x:Name="LotContent" IsVisible="False">
-                <Grid RowDefinitions="Auto,*,Auto" 
-                    Padding="10"
-                    RowSpacing="10"
-                    BackgroundColor="#F5F5F5">
-
-                    <!-- Header Section -->
-                    <VerticalStackLayout Grid.Row="0" Spacing="10">
-                        <Label Text="Batch Inventory"
-                         FontSize="28"
-                         FontAttributes="Bold"
-                         TextColor="#333"
-                         HorizontalOptions="Center" />
-                        <!-- Product Picker Section -->
-                        <Frame CornerRadius="16" 
-                         BackgroundColor="White" 
-                         Padding="20" 
-                         HasShadow="True"
-                         HorizontalOptions="FillAndExpand">
-                            <VerticalStackLayout Spacing="12">
-                                <Label Text="Choose a batch:"
-                                 FontSize="18"
-                                 FontAttributes="Bold"
-                                 TextColor="#444" />
-                                
-                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
-                                    
-                                        
-                                    <dxe:ComboBoxEdit Grid.Column="0"
-                                         LabelText="Select a Batch"
-                                         ItemsSource="{Binding BatchNames}"
-                                         SelectedItem="{Binding SelectedBatchName, Mode=TwoWay}"
-                                         HorizontalOptions="FillAndExpand"
-                                         VerticalOptions="Center" />
-
-                                </Grid>
-
-                                <Button Text="➕ Add to List"
-                                  Command="{Binding AddBatchCommand}"
-                                  BackgroundColor="#0078D7"
-                                  TextColor="White"
-                                  FontAttributes="Bold"
-                                  CornerRadius="10"
-                                  HeightRequest="48"
-                                  HorizontalOptions="Fill"/>
-                                <Button Text="Show All batch"
-                                  
-                                   BackgroundColor="#0078D7"
-                                   TextColor="White"
-                                   FontAttributes="Bold"
-                                   CornerRadius="10"
-                                   HeightRequest="48"
-                                   HorizontalOptions="Fill"/>
-                            </VerticalStackLayout>
-                        </Frame>
-                    </VerticalStackLayout>
-                    <!-- lot List -->
-                    <CollectionView Grid.Row="1"
-                              x:Name="BatchListView"
-                              ItemsSource="{Binding ScannedLots}"
-                              SelectionMode="None"
-                              Margin="0,10">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Frame Padding="15"
-                                 Margin="0,6"
-                                 CornerRadius="14"
-                                 BackgroundColor="White"
-                                 HasShadow="True">
-                                    <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnProductTapped" />
-                                    </Frame.GestureRecognizers>
-
-                                    <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center">
-                                        <VerticalStackLayout Grid.Column="0" Spacing="4">
-                                            <Label Text="{Binding Code}"
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <!-- Header & Picker -->
+                <VerticalStackLayout Grid.Row="0" Spacing="10">
+                    <Label Text="Batch Inventory"
+                     FontSize="28"
+                     FontAttributes="Bold"
+                     TextColor="#333"
+                     HorizontalOptions="Center" />
+                    <!-- Product Picker Section -->
+                    <Frame CornerRadius="16" 
+                     BackgroundColor="White" 
+                     Padding="20" 
+                     HasShadow="True"
+                     HorizontalOptions="FillAndExpand">
+                        <VerticalStackLayout Spacing="12">
+                            <Label Text="Choose a batch:"
+                             FontSize="18"
+                             FontAttributes="Bold"
+                             TextColor="#444" />
+                            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                                <dxe:ComboBoxEdit Grid.Column="0"
+                                     LabelText="Select a Batch"
+                                     ItemsSource="{Binding BatchNames}"
+                                     SelectedItem="{Binding SelectedBatchName, Mode=TwoWay}"
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="Center" />
+                            </Grid>
+                            <Button Text="➕ Add to List"
+                              Command="{Binding AddBatchCommand}"
+                              BackgroundColor="#0078D7"
+                              TextColor="White"
+                              FontAttributes="Bold"
+                              CornerRadius="10"
+                              HeightRequest="48"
+                              HorizontalOptions="Fill"/>
+                            <Button Text="Show All batch"
+                               BackgroundColor="#0078D7"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               CornerRadius="10"
+                               HeightRequest="48"
+                               HorizontalOptions="Fill"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </VerticalStackLayout>
+                <!-- lot List -->
+                 <CollectionView Grid.Row="1"
+                      x:Name="BatchListView"
+                      ItemsSource="{Binding ScannedLots}"
+                      SelectionMode="None"
+                      VerticalOptions="FillAndExpand"
+                      Margin="0,10">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame Padding="15"
+                             Margin="0,6"
+                             CornerRadius="14"
+                             BackgroundColor="White"
+                             HasShadow="True">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnProductTapped" />
+                                </Frame.GestureRecognizers>
+                                <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center">
+                                    <VerticalStackLayout Grid.Column="0" Spacing="4">
+                                        <Label Text="{Binding Code}"
                                              FontAttributes="Bold"
                                              FontSize="17"
                                              TextColor="#222"/>
-                                            <Label Text="Stock: "
+                                        <Label Text="Product name: "
                                              FontAttributes="Bold"
                                              FontSize="14"
                                              TextColor="#666" />
-                                           
-                                        </VerticalStackLayout>
-                                        <Button Grid.Column="1"
-                                                  Text="🗑️"
-                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type local:HomePage}}, Path=BindingContext.DeleteBatchCommand}"
-                                                  CommandParameter="{Binding}"
-                                                  BackgroundColor="#FF4444"
-                                                  TextColor="White"
-                                                  CornerRadius="24"
-                                                  FontSize="20"
-                                                  HeightRequest="44"
-                                                  WidthRequest="44"
-                                                  HorizontalOptions="End"
-                                                  VerticalOptions="Center"/>    
-                                    </Grid>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-
-                    <!-- Floating Action Button -->
-                    <Button Grid.Row="2"
-                      Text="➕"
-                      Clicked="FloatingButton_Clicked"
-                      FontSize="24"
-                      BackgroundColor="#0078D7"
-                      TextColor="White"
-                      CornerRadius="30"
-                      WidthRequest="60"
-                      HeightRequest="60"
-                      HorizontalOptions="End"
-                      Margin="0,10,0,0"/>
-                </Grid>
+                                        <Label Text="{Binding ProductName}" 
+                                            FontAttributes="Italic" 
+                                            FontSize="14" TextColor="#888"/>
+                                    </VerticalStackLayout>
+                                    <Button Grid.Column="1"
+                                              Text="🗑️"
+                                              Command="{Binding Source={RelativeSource AncestorType={x:Type local:HomePage}}, Path=BindingContext.DeleteBatchCommand}"
+                                              CommandParameter="{Binding}"
+                                              BackgroundColor="#FF4444"
+                                              TextColor="White"
+                                              CornerRadius="24"
+                                              FontSize="20"
+                                              HeightRequest="44"
+                                              WidthRequest="44"
+                                              HorizontalOptions="End"
+                                              VerticalOptions="Center"/>    
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <!-- Floating Action Button -->
+                <Button Grid.Row="2"
+                  Text="➕"
+                  Clicked="FloatingButton_Clicked"
+                  FontSize="24"
+                  BackgroundColor="#0078D7"
+                  TextColor="White"
+                  CornerRadius="30"
+                  WidthRequest="60"
+                  HeightRequest="60"
+                  HorizontalOptions="End"
+                  Margin="0,10,0,0"/>
             </Grid>
         </Grid>
-    </VerticalStackLayout>
+    </Grid>
 </ContentPage>

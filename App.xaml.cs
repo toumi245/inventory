@@ -12,12 +12,12 @@ namespace CodeABarre
 
                 var myConnection = new ConnectionModel
                 {
-                    Server = "192.168.1.13",
+                    Server = "192.168.1.15",
                     Port = 3306,
                     Database = "batch_test_workman",
                     User = "root",
                     Password = "",
-                    ConnectTimeout = 10
+                    ConnectTimeout = 60
                 };
                 ProductModel.SetConnection(myConnection);
                 BatchModel.SetConnection(myConnection); 

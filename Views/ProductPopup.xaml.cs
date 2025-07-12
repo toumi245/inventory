@@ -9,16 +9,18 @@ public partial class ProductPopup : Popup
 {
     private static ConnectionModel _connection;
     private readonly Action<ProductModel> _onProductAddedToInventory;
-
+    private Warehouse _selectedWarehouseFromHome;
     private ProductModel _product;
-    public ProductPopup(ProductModel product, ConnectionModel connection, Action<ProductModel> onProductAddedToInventory)
+    public ProductPopup(ProductModel product, ConnectionModel connection, Action<ProductModel> onProductAddedToInventory, Warehouse selectedWarehouseFromHome)
     {
 		InitializeComponent();
-       _ = LoadInventoriesAsync();
         _connection = connection ?? throw new ArgumentNullException(nameof(connection));
+        _ = LoadInventoriesAsync();
         _product = product ?? throw new ArgumentNullException(nameof(product));
         _onProductAddedToInventory = onProductAddedToInventory;
+        _selectedWarehouseFromHome = selectedWarehouseFromHome;
         BindingContext = product;
+    
     }
     
     private void OnCheckStockClicked(object sender, EventArgs e)
@@ -50,9 +52,8 @@ public partial class ProductPopup : Popup
     }
     private async Task LoadInventoriesAsync()
     {
-       var inventories = new List<Inventory>();
-
-       try
+    var inventories = new List<Inventory>();
+    try
       {
            using var connection = new MySqlConnection(_connection.GetConnectionString());
             await connection.OpenAsync();
@@ -66,17 +67,16 @@ public partial class ProductPopup : Popup
                 inventories.Add(new Inventory
                 {
                     Id = Convert.ToInt32(reader["id"]),
-                Name = reader["name"].ToString()
-
+                    Name = reader["name"].ToString()
               });
           }
 
            InventoryPicker.ItemsSource = inventories;
       }
        catch (Exception ex)
-      {
+       {
           Console.WriteLine(ex);
-        }
+       }
     }
     private async void OnAddToInventoryClicked(object sender, EventArgs e)
     {
@@ -108,17 +108,14 @@ public partial class ProductPopup : Popup
             INSERT INTO commercial_inventory_line (product, inventory, real_stock, theorical_real_stock)
             VALUES (@product, @inventory, @real_stock, @theorical_real_stock)
         ", connection);
-
             cmd.Parameters.AddWithValue("@product", _product.Id);
             cmd.Parameters.AddWithValue("@inventory", selectedInventory.Id);
             cmd.Parameters.AddWithValue("@real_stock", realStock);
             cmd.Parameters.AddWithValue("@theorical_real_stock", _product.ActualStock);
-
             await cmd.ExecuteNonQueryAsync();
             await Application.Current.MainPage.DisplayAlert("Success", "Inventory line added successfully.", "OK");
-             // Debugging lines:
-          _onProductAddedToInventory?.Invoke(_product); // Remove from list
-            Close(); // Close the popup if applicable
+            _onProductAddedToInventory?.Invoke(_product); // Remove from list
+            Close();
         }
         catch (Exception ex)
         {
@@ -132,12 +129,29 @@ public partial class ProductPopup : Popup
     }
     private void OnShowInventoryPopupClicked(object sender, EventArgs e)
     {
+        // Utilise l'ID du warehouse sélectionné dans la HomePage
+        int warehouseIdToPass = _selectedWarehouseFromHome != null ? _selectedWarehouseFromHome.Id : 0;
+
+        if (warehouseIdToPass == 0)
+        {
+            Application.Current.MainPage.DisplayAlert("Erreur", "Veuillez sélectionner un entrepôt sur la page d'accueil.", "OK");
+            return;
+        }
+
+
         if (Application.Current.MainPage is Page page)
         {
-            var popup = new InventoryPopUp(_connection);
+            var popup = new InventoryPopUp(_connection, warehouseIdToPass);
             page.ShowPopup(popup);
         }
+
+        else
+        {
+            Application.Current.MainPage.DisplayAlert("Erreur", "Veuillez sélectionner un entrepôt.", "OK");
+        }
     }
+  
+    
 
 }
 

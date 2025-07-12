@@ -20,7 +20,6 @@ namespace CodeABarre.ViewModels
 
         private readonly ConnectionModel _connection;
         public ObservableCollection<ProductModel> Products { get; }
-         private Warehouse _selectedWarehouse;
         public Warehouse SelectedWarehouse
         {
             get => _selectedWarehouse;
@@ -32,6 +31,7 @@ namespace CodeABarre.ViewModels
         }
         public ObservableCollection<BatchModel> ScannedLots { get; set; }
         public ObservableCollection<Warehouse> Warehouses { get; set; } = new();
+        private Warehouse _selectedWarehouse;
 
         public ObservableCollection<string> ProductNames
         {
@@ -88,6 +88,7 @@ namespace CodeABarre.ViewModels
             DeleteBatchCommand = new Command<BatchModel>(async(lot)=>await DeleteBatchAsync(lot) );            
             LoadProductNamesAsync();
             LoadBatchNamesAsync();
+            Warehouses = new ObservableCollection<Warehouse>();
             LoadWarehousesAsync();
         }
 
@@ -160,7 +161,12 @@ namespace CodeABarre.ViewModels
 
                 if (lot != null && !ScannedLots.Any(p => p.Barcode == lot.Barcode))
                 {
-                    ScannedLots.Add(lot);
+                    // Récupère le batch avec le nom du produit
+                    var batchWithProductName = await BatchModel.GetBatchWithProductNameAsync(lot.Id);
+                    if (batchWithProductName != null)
+                        ScannedLots.Add(batchWithProductName);
+                    else
+                        ScannedLots.Add(lot);
                 }
             }
             catch (Exception ex)
@@ -234,21 +240,28 @@ namespace CodeABarre.ViewModels
                 OnPropertyChanged(nameof(IsLoading));
             }
         }
-        public async Task ShowProductPopup(ProductModel product)
+        public async Task ShowProductPopup(ProductModel product, Warehouse selectedWarehouse)
         {
             if (Application.Current.MainPage is Page page)
             {
-                var popup = new ProductPopup(product, _connection, (p) => Products.Remove(p));
+                var popup = new ProductPopup(product, _connection, (p) => Products.Remove(p),selectedWarehouse);
                 await page.ShowPopupAsync(popup);
             }
         }
         public void ShowInventoryPopup()
         {
             if (Application.Current.MainPage is Page page)
-            {
-                var popup = new InventoryPopUp(_connection);
-                page.ShowPopup(popup);
-            }
+    {
+        if (SelectedWarehouse != null)
+        {
+            var popup = new InventoryPopUp(_connection, SelectedWarehouse.Id);
+            page.ShowPopup(popup);
+        }
+        else
+        {
+            Application.Current.MainPage.DisplayAlert("Erreur", "Veuillez sélectionner un entrepôt.", "OK");
+        }
+    }
         }
         private bool _isLotChecked;
     public bool IsLotChecked

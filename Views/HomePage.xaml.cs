@@ -15,14 +15,12 @@ public partial class HomePage : ContentPage
     public HomePage()
     {
         InitializeComponent();
-
         var products = new ObservableCollection<ProductModel>();
         Action<string> deleteCallback = (productId) =>
         {
             // Logique de suppression
             Console.WriteLine($"Product {productId} deleted");
         };
-        
         _viewModel = new HomePageViewModel(products, deleteCallback, ProductModel.GetConnection());
         BindingContext = _viewModel;
     }
@@ -77,7 +75,7 @@ protected override void OnAppearing()
         {
             if (sender is Frame frame && frame.BindingContext is ProductModel product)
             {
-                _viewModel.ShowProductPopup(product);
+                _viewModel.ShowProductPopup(product, _viewModel.SelectedWarehouse);
             }
         }
         catch (Exception ex)

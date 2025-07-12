@@ -13,7 +13,7 @@ namespace CodeABarre.Models
         public int Id { get; set; }
         public string Barcode { get; set; }
         public string Code { get; set; }
-
+         public string ProductName { get; set; } 
         private static ConnectionModel _connection;
 
         public static void SetConnection(ConnectionModel connection)
@@ -90,6 +90,34 @@ namespace CodeABarre.Models
             }
             return null;
         }
+        public static async Task<BatchModel> GetBatchWithProductNameAsync(int batchId)
+{
+    if (_connection == null) throw new InvalidOperationException("ConnectionModel is not set. Call SetConnection first.");
+            using var connection = new MySqlConnection(_connection.GetConnectionString());
+    await connection.OpenAsync();
+
+    string query = @"
+        SELECT b.id AS batch_id, b.code AS batch_code, p.name AS product_name
+        FROM commercial_batch b
+        LEFT JOIN commercial_product p ON b.product = p.id
+        WHERE b.id = @BatchId;
+    ";
+
+    using var cmd = new MySqlCommand(query, connection);
+    cmd.Parameters.AddWithValue("@BatchId", batchId);
+
+    using var reader = await cmd.ExecuteReaderAsync();
+    if (await reader.ReadAsync())
+    {
+        return new BatchModel
+        {
+            Id = reader.GetInt32("batch_id"),
+            Code = reader.GetString("batch_code"),
+            ProductName = reader["product_name"] == DBNull.Value ? "Inconnu" : reader["product_name"].ToString()
+        };
+    }
+    return null;
+}
         public static class BatchSession
         {
             public static ObservableCollection<BatchModel> ScannedBatch { get; } = new();

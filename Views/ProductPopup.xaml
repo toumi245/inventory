@@ -60,16 +60,15 @@
                        TextColor="DarkGreen"
                        HorizontalOptions="Center"
                        FontAttributes="Italic" />
-<HorizontalStackLayout VerticalOptions="Center">
+                <HorizontalStackLayout VerticalOptions="Center">
 
-<CheckBox x:Name="ShowInventoryCheckBox"
-          IsChecked="False"
-          CheckedChanged="OnShowInventoryCheckBoxChanged"
-          />
-           <Label Text="Show Inventory ComboBox"
-           VerticalOptions="Center"
-           Margin="8,0,0,0"/>
-</HorizontalStackLayout>
+                    <CheckBox x:Name="ShowInventoryCheckBox"
+                              IsChecked="False"
+                              CheckedChanged="OnShowInventoryCheckBoxChanged"/>
+                    <Label Text="Show Inventory ComboBox"
+                           VerticalOptions="Center"
+                           Margin="8,0,0,0"/>
+                </HorizontalStackLayout>    
                 <!-- Inventory Picker -->
                 <!-- Wrap InventoryPicker in a container for easy visibility control -->
               <StackLayout x:Name="InventoryPickerContainer" IsVisible="False">
@@ -81,8 +80,7 @@
                         BackgroundColor="#F3F4F6"
                         HeightRequest="{OnPlatform iOS='50', Android='50', Default='50'}"
                         Margin="0,5"
-                        VerticalOptions="Center" 
-                       />
+                        VerticalOptions="Center" />
               </StackLayout>
                 <!-- Floating Action Button -->
                 <Button Grid.Row="2"
