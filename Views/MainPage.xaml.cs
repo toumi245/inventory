@@ -154,19 +154,35 @@ public partial class MainPage : ContentPage
             // --- Ajout détection LOT ---
             if (barcode.StartsWith("020"))
             {
-                // Supposons que GetLotByBarcodeAsync existe et retourne un objet LotModel
-               BatchModel lot = await BatchModel.GetBatchByBarcodeAsync(barcode);
+                // Récupère le lot avec le nom du produit associé
+                BatchModel lot = await BatchModel.GetBatchByBarcodeAsync(barcode);
                 HideLoading();
                 await MainThread.InvokeOnMainThreadAsync(async () =>
                 {
                     if (lot != null)
                     {
-                        await DisplayAlert("Lot détecté", $"Code LOT : {barcode}\nNom du lot : {lot.Code}", "OK");
-                        // Ajoutez le lot à la collection si pas déjà présent
-                        if (!BatchModel.BatchSession.ScannedBatch.Any(b => b.Barcode == lot.Barcode))
+                        // Récupère le lot avec le nom du produit
+                        var lotWithProduct = await BatchModel.GetBatchWithProductNameAsync(lot.Id);
+                        
+                        if (lotWithProduct != null)
                         {
-                            BatchModel.BatchSession.ScannedBatch.Add(lot);
+                            await DisplayAlert("Lot détecté", $"Code LOT : {barcode}\nNom du lot : {lot.Code}\nProduit : {lotWithProduct.ProductName}", "OK");
+                            // Ajoute le lot avec le nom du produit à la collection
+                            if (!BatchModel.BatchSession.ScannedBatch.Any(b => b.Barcode == lot.Barcode))
+                            {
+                                BatchModel.BatchSession.ScannedBatch.Add(lotWithProduct);
+                            }
                         }
+                        else
+                        {
+                            await DisplayAlert("Lot détecté", $"Code LOT : {barcode}\nNom du lot : {lot.Code}\nProduit : Inconnu", "OK");
+                            // Ajoute le lot sans nom de produit
+                            if (!BatchModel.BatchSession.ScannedBatch.Any(b => b.Barcode == lot.Barcode))
+                            {
+                                BatchModel.BatchSession.ScannedBatch.Add(lot);
+                            }
+                        }
+                        
                         var homePage = new HomePage(
                         ProductSession.ScannedProducts,
                         barcodeToDelete => {
