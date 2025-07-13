@@ -1,8 +1,9 @@
 ﻿using CommunityToolkit.Maui.Views;
 using CodeABarre.Models;
-using MySqlConnector;
 using CodeABarre.Helpers;
+using MySqlConnector;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
 namespace CodeABarre.Views;
 
 public partial class ProductPopup : Popup
@@ -11,22 +12,27 @@ public partial class ProductPopup : Popup
     private readonly Action<ProductModel> _onProductAddedToInventory;
     private Warehouse _selectedWarehouseFromHome;
     private ProductModel _product;
+
     public ProductPopup(ProductModel product, ConnectionModel connection, Action<ProductModel> onProductAddedToInventory, Warehouse selectedWarehouseFromHome)
     {
-		InitializeComponent();
+        InitializeComponent();
+
         _connection = connection ?? throw new ArgumentNullException(nameof(connection));
-        _ = LoadInventoriesAsync();
         _product = product ?? throw new ArgumentNullException(nameof(product));
         _onProductAddedToInventory = onProductAddedToInventory;
         _selectedWarehouseFromHome = selectedWarehouseFromHome;
-        BindingContext = product;
-    
+
+        BindingContext = _product;
+
+        _ = LoadInventoriesAsync();
     }
-    
+
+    // ==============================
+    // Stock Check Logic
+    // ==============================
     private void OnCheckStockClicked(object sender, EventArgs e)
     {
         if (decimal.TryParse(StockEntry.Text, out decimal enteredStock))
-
         {
             if (enteredStock > _product.ActualStock)
             {
@@ -50,14 +56,18 @@ public partial class ProductPopup : Popup
             MessageLabel.TextColor = Colors.OrangeRed;
         }
     }
+
+    // ==============================
+    // Load Inventories from DB
+    // ==============================
     private async Task LoadInventoriesAsync()
     {
-    var inventories = new List<Inventory>();
-    try
-      {
-           using var connection = new MySqlConnection(_connection.GetConnectionString());
+        var inventories = new List<Inventory>();
+
+        try
+        {
+            using var connection = new MySqlConnection(_connection.GetConnectionString());
             await connection.OpenAsync();
-           
 
             var cmd = new MySqlCommand("SELECT id, name FROM commercial_inventory", connection);
             using var reader = await cmd.ExecuteReaderAsync();
@@ -68,16 +78,20 @@ public partial class ProductPopup : Popup
                 {
                     Id = Convert.ToInt32(reader["id"]),
                     Name = reader["name"].ToString()
-              });
-          }
+                });
+            }
 
-           InventoryPicker.ItemsSource = inventories;
-      }
-       catch (Exception ex)
-       {
-          Console.WriteLine(ex);
-       }
+            InventoryPicker.ItemsSource = inventories;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
     }
+
+    // ==============================
+    // Add to Inventory Logic
+    // ==============================
     private async void OnAddToInventoryClicked(object sender, EventArgs e)
     {
         await Application.Current.MainPage.DisplayAlert("Debug", $"_product.Id: {_product.Id}, Name: {_product.Name}", "OK");
@@ -99,22 +113,26 @@ public partial class ProductPopup : Popup
             await Application.Current.MainPage.DisplayAlert("Validation", "Enter a valid number for stock.", "OK");
             return;
         }
+
         try
         {
             using var connection = new MySqlConnection(_connection.GetConnectionString());
             await connection.OpenAsync();
 
             var cmd = new MySqlCommand(@"
-            INSERT INTO commercial_inventory_line (product, inventory, real_stock, theorical_real_stock)
-            VALUES (@product, @inventory, @real_stock, @theorical_real_stock)
-        ", connection);
+                INSERT INTO commercial_inventory_line (product, inventory, real_stock, theorical_real_stock)
+                VALUES (@product, @inventory, @real_stock, @theorical_real_stock)
+            ", connection);
+
             cmd.Parameters.AddWithValue("@product", _product.Id);
             cmd.Parameters.AddWithValue("@inventory", selectedInventory.Id);
             cmd.Parameters.AddWithValue("@real_stock", realStock);
             cmd.Parameters.AddWithValue("@theorical_real_stock", _product.ActualStock);
+
             await cmd.ExecuteNonQueryAsync();
+
             await Application.Current.MainPage.DisplayAlert("Success", "Inventory line added successfully.", "OK");
-            _onProductAddedToInventory?.Invoke(_product); // Remove from list
+            _onProductAddedToInventory?.Invoke(_product);
             Close();
         }
         catch (Exception ex)
@@ -122,15 +140,22 @@ public partial class ProductPopup : Popup
             await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
         }
     }
+
+    // ==============================
+    // Toggle Picker Visibility
+    // ==============================
     private void OnShowInventoryCheckBoxChanged(object sender, CheckedChangedEventArgs e)
     {
         InventoryPickerContainer.IsVisible = e.Value;
         AddInventoryButton.IsVisible = !e.Value;
     }
+
+    // ==============================
+    // Show Add Inventory Popup
+    // ==============================
     private void OnShowInventoryPopupClicked(object sender, EventArgs e)
     {
-        // Utilise l'ID du warehouse sélectionné dans la HomePage
-        int warehouseIdToPass = _selectedWarehouseFromHome != null ? _selectedWarehouseFromHome.Id : 0;
+        int warehouseIdToPass = _selectedWarehouseFromHome?.Id ?? 0;
 
         if (warehouseIdToPass == 0)
         {
@@ -138,21 +163,14 @@ public partial class ProductPopup : Popup
             return;
         }
 
-
         if (Application.Current.MainPage is Page page)
         {
             var popup = new InventoryPopUp(_connection, warehouseIdToPass);
             page.ShowPopup(popup);
         }
-
         else
         {
             Application.Current.MainPage.DisplayAlert("Erreur", "Veuillez sélectionner un entrepôt.", "OK");
         }
     }
-  
-    
-
 }
-
-

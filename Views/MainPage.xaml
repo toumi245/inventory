@@ -131,12 +131,8 @@
                     CornerRadius="25" 
                      WidthRequest="50"
                     HeightRequest="50"
-                   
                     BorderColor="Black" 
                     Clicked="ShowListButton_Clicked" />
-
         </Grid>
-
     </Grid>
-
 </ContentPage>
