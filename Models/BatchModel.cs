@@ -15,7 +15,7 @@ namespace CodeABarre.Models
         public string Barcode { get; set; }
         public string Code { get; set; }
         public string ProductName { get; set; }
-
+        public int ProductId { get; set; } 
         // =====================
         // Static Fields
         // =====================
@@ -50,7 +50,7 @@ namespace CodeABarre.Models
                 using var connection = new MySqlConnection(_connection.GetConnectionString());
                 await connection.OpenAsync();
 
-                var command = new MySqlCommand("SELECT id, code FROM commercial_batch WHERE barcode = @barcode LIMIT 1;", connection);
+                var command = new MySqlCommand("SELECT id, code,product FROM commercial_batch WHERE barcode = @barcode LIMIT 1;", connection);
                 command.Parameters.AddWithValue("@barcode", barcode);
 
                 using var reader = await command.ExecuteReaderAsync();
@@ -60,7 +60,8 @@ namespace CodeABarre.Models
                     {
                         Id = Convert.ToInt32(reader["id"]),
                         Barcode = barcode,
-                        Code = reader.GetString("code")
+                        Code = reader.GetString("code"),
+                        ProductId = reader["product"] == DBNull.Value ? 0 : Convert.ToInt32(reader["product"])
                     };
                 }
             }
@@ -80,7 +81,7 @@ namespace CodeABarre.Models
             using var connection = new MySqlConnection(_connection.GetConnectionString());
             await connection.OpenAsync();
 
-            var command = new MySqlCommand("SELECT id, barcode, code FROM commercial_batch WHERE code = @code LIMIT 1;", connection);
+            var command = new MySqlCommand("SELECT id, barcode, code,product FROM commercial_batch WHERE code = @code LIMIT 1;", connection);
             command.Parameters.AddWithValue("@code", code);
 
             using var reader = await command.ExecuteReaderAsync();
@@ -90,7 +91,8 @@ namespace CodeABarre.Models
                 {
                     Id = Convert.ToInt32(reader["id"]),
                     Barcode = reader["barcode"].ToString(),
-                    Code = reader["code"].ToString()
+                    Code = reader["code"].ToString(),
+                    ProductId = reader["product"] == DBNull.Value ? 0 : Convert.ToInt32(reader["product"])
                 };
             }
 
@@ -127,7 +129,7 @@ namespace CodeABarre.Models
             await connection.OpenAsync();
 
             string query = @"
-                SELECT b.id AS batch_id, b.code AS batch_code, p.name AS product_name
+                SELECT b.id AS batch_id, b.code AS batch_code, b.product AS product_id, p.name AS product_name
                 FROM commercial_batch b
                 LEFT JOIN commercial_product p ON b.product = p.id
                 WHERE b.id = @BatchId;
@@ -143,7 +145,8 @@ namespace CodeABarre.Models
                 {
                     Id = reader.GetInt32("batch_id"),
                     Code = reader.GetString("batch_code"),
-                    ProductName = reader["product_name"] == DBNull.Value ? "Inconnu" : reader["product_name"].ToString()
+                    ProductName = reader["product_name"] == DBNull.Value ? "Inconnu" : reader["product_name"].ToString(),
+                    ProductId = reader["product_id"] == DBNull.Value ? 0 : Convert.ToInt32(reader["product_id"])
                 };
             }
 

@@ -13,7 +13,7 @@ using System.Collections.ObjectModel;
 using CodeABarre.ViewModels;
 using Plugin.Maui.Audio;
 using Microsoft.Maui.Devices;
-
+using CommunityToolkit.Maui.Views;
 namespace CodeABarre
 {
     public partial class MainPage : ContentPage
@@ -23,12 +23,14 @@ namespace CodeABarre
         private IAudioPlayer? _player;
         private IDispatcherTimer? _loadingTimer;
         private ContentView? _loadingOverlay;
+        private View? _originalContent; // Ajout pour stocker le contenu d'origine
 
         public MainPage()
         {
             InitializeComponent();
             _viewModel = new MainViewModel();
             BindingContext = _viewModel;
+            _originalContent = this.Content; // Stocke le contenu d'origine
 
             barcodeView.HandlerChanged += (s, e) =>
             {
@@ -38,7 +40,7 @@ namespace CodeABarre
 
             barcodeView.Options = new BarcodeReaderOptions
             {
-                Formats = BarcodeFormat.Code128 | BarcodeFormat.QrCode,
+                Formats = BarcodeFormat.Ean13 | BarcodeFormat.QrCode,
                 AutoRotate = true,
                 Multiple = true
             };
@@ -85,7 +87,7 @@ namespace CodeABarre
                     {
                         Children =
                         {
-                            this.Content,
+                            _originalContent, // Utilise le contenu d'origine
                             _loadingOverlay
                         }
                     };
@@ -195,7 +197,8 @@ namespace CodeABarre
                                         ProductSession.ScannedProducts.Remove(item);
                                     }
                                 },
-                                BatchModel.BatchSession.ScannedBatch
+                                BatchModel.BatchSession.ScannedBatch,
+                                HomePageViewModel.LastSelectedWarehouse
                             );
                             homePage.ActivateLotSwitchOnAppear();
                             await Navigation.PushAsync(homePage, animated: false);
@@ -205,6 +208,12 @@ namespace CodeABarre
                             {
                                 homePage.GetLotProduitSwitch().IsToggled = true;
                             });
+                            // Ouvre automatiquement le BatchPopup pour le lot scanné
+                            await Task.Delay(50); // Laisse le temps à la page de s'afficher
+                            if (homePage.BindingContext is HomePageViewModel vm && lotWithProduct != null)
+                            {
+                                await vm.ShowBatchPopup(lotWithProduct, vm.SelectedWarehouse);
+                            }
                         }
                         else
                         {
@@ -232,8 +241,8 @@ namespace CodeABarre
                                 ProductSession.ScannedProducts.Add(product);
                             }
 
-                            // Navigate to list page
-                            await Navigation.PushAsync(new HomePage(
+                            // Crée la HomePage, navigue, attend, puis ouvre le popup produit
+                            var homePage = new HomePage(
                                 ProductSession.ScannedProducts,
                                 barcodeToDelete =>
                                 {
@@ -243,8 +252,17 @@ namespace CodeABarre
                                         ProductSession.ScannedProducts.Remove(item);
                                     }
                                 },
-                                BatchModel.BatchSession.ScannedBatch
-                            ), animated: false);
+                                BatchModel.BatchSession.ScannedBatch,
+                                HomePageViewModel.LastSelectedWarehouse
+                            );
+
+                            await Navigation.PushAsync(homePage, animated: false);
+                            await Task.Delay(100); // Laisse le temps à la page de s'afficher
+
+                            if (homePage.BindingContext is HomePageViewModel vm && product != null)
+                            {
+                                await vm.ShowProductPopup(product, vm.SelectedWarehouse);
+                            }
                         }
                         else
                         {
@@ -261,7 +279,7 @@ namespace CodeABarre
             }
             finally
             {
-                // Minimal debounce delay (100ms instead of 500ms)
+                // Minimal debounce delay (100ms)
                 await Task.Delay(100);
                 _viewModel.IsProcessingBarcode = false;
             }
@@ -307,29 +325,6 @@ namespace CodeABarre
         {
             _viewModel.Reset();
             barcodeGenerator.ClearValue(BarcodeGeneratorView.ValueProperty);
-        }
-
-        public async void ShowListButton_Clicked(object sender, EventArgs e)
-        {
-            try
-            {
-                await Navigation.PushAsync(new HomePage(
-                    ProductSession.ScannedProducts,
-                    barcodeToDelete =>
-                    {
-                        var item = ProductSession.ScannedProducts.FirstOrDefault(p => p.Barcode == barcodeToDelete);
-                        if (item != null)
-                        {
-                            ProductSession.ScannedProducts.Remove(item);
-                        }
-                    },
-                    BatchModel.BatchSession.ScannedBatch
-                ), animated: false);
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
-            }
         }
     }
 }

@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = CodeABarre.Resources.Style
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/ASUS/Downloads/codeABare-1-main/codeABare-1-main/Views/BatchPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CodeABarre.Views.BatchPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BatchPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BatchPopup.xaml
+
 [C:/Users/ASUS/Downloads/codeABare-1-main/codeABare-1-main/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CodeABarre.Views.HomePage.xaml

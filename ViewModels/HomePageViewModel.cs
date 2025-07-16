@@ -20,12 +20,15 @@ namespace CodeABarre.ViewModels
 
         private readonly ConnectionModel _connection;
         public ObservableCollection<ProductModel> Products { get; }
+        public static Warehouse LastSelectedWarehouse { get; set; }
+
         public Warehouse SelectedWarehouse
         {
             get => _selectedWarehouse;
             set
             {
                 _selectedWarehouse = value;
+                LastSelectedWarehouse = value;
                 OnPropertyChanged(nameof(SelectedWarehouse));
             }
         }
@@ -75,7 +78,7 @@ namespace CodeABarre.ViewModels
         public ICommand DeleteBatchCommand { get; }
         private Action<string> _deleteCallback;
 
-        public HomePageViewModel(ObservableCollection<ProductModel> products, Action<string> deleteCallback, ConnectionModel connection)
+        public HomePageViewModel(ObservableCollection<ProductModel> products, Action<string> deleteCallback, ConnectionModel connection, Warehouse selectedWarehouse = null)
         {
             Products = products;
             _deleteCallback = deleteCallback;
@@ -90,6 +93,7 @@ namespace CodeABarre.ViewModels
             LoadBatchNamesAsync();
             Warehouses = new ObservableCollection<Warehouse>();
             LoadWarehousesAsync();
+            SelectedWarehouse = selectedWarehouse;
         }
 
         public async Task DeleteProductAsync(ProductModel product)
@@ -245,6 +249,14 @@ namespace CodeABarre.ViewModels
             if (Application.Current.MainPage is Page page)
             {
                 var popup = new ProductPopup(product, _connection, (p) => Products.Remove(p),selectedWarehouse);
+                await page.ShowPopupAsync(popup);
+            }
+        }
+        public async Task ShowBatchPopup(BatchModel batch, Warehouse selectedWarehouse)
+        {
+            if (Application.Current.MainPage is Page page)
+            {
+                var popup = new BatchPopup(batch, _connection,(p) => ScannedLots.Remove(p), selectedWarehouse);
                 await page.ShowPopupAsync(popup);
             }
         }

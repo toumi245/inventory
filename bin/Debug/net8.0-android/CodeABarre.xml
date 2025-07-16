@@ -4,6 +4,21 @@
         <name>CodeABarre</name>
     </assembly>
     <members>
+        <member name="M:CodeABarre.ViewModels.MainViewModel.CalculateEan13Checksum(System.String)">
+            <summary>
+            Calcule le chiffre de contrôle (checksum) EAN-13 à partir de 12 chiffres.
+            </summary>
+        </member>
+        <member name="M:CodeABarre.ViewModels.MainViewModel.GenerateEan13(System.String)">
+            <summary>
+            Génère un code EAN-13 valide à partir de 12 chiffres.
+            </summary>
+        </member>
+        <member name="M:CodeABarre.ViewModels.MainViewModel.SetEan13From12Digits(System.String)">
+            <summary>
+            Met à jour CurrentValue avec un code EAN-13 valide à partir de 12 chiffres.
+            </summary>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color

@@ -3481,6 +3481,17 @@ C:\Users\ASUS\Downloads\CodeABarre-main v1\CodeABarre-main\obj\Debug\net8.0-andr
 C:\Users\ASUS\Downloads\CodeABarre-main v1\CodeABarre-main\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\ASUS\Downloads\CodeABarre-main v1\CodeABarre-main\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\ASUS\Downloads\CodeABarre-main v1\CodeABarre-main\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\CodeABarre.runtimeconfig.json
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\CodeABarre.dll
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\CodeABarre.pdb
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre.apk
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre.aab
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre-Signed.aab
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre-Signed.apk
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre-Signed.apk.idsig
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\build.props
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\adb.props
@@ -3489,18 +3500,22 @@ C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-andro
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\mauiimage.inputs
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\mauifont.inputs
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\mauisplash.inputs
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\sp\drawable-hdpi\splash.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\sp\drawable-mdpi\splash.png
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\sp\drawable-xhdpi\splash.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\splash.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\splash.png
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\sp\drawable\maui_splash_image.xml
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\sp\drawable\systmtc.jpg
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\sp\values\maui_colors.xml
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\mauisplash.stamp
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\mauifont.stamp
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable\plus.png
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable\systmtc.jpg
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable\scan.png
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\dotnet_bot.png
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
+C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\mipmap-xxxhdpi\appicon_round.png
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\mipmap-xxhdpi\appicon_round.png
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\mipmap-xhdpi\appicon_round.png
@@ -3523,13 +3538,6 @@ C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-andro
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\mipmap-xhdpi\appicon_background.png
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\mipmap-hdpi\appicon_background.png
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\mipmap-mdpi\appicon_background.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable\plus.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable\scan.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\dotnet_bot.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\mauiimage.stamp
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\mauiimage.outputs
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\libraryprojectimports.cache
@@ -3609,17 +3617,6 @@ C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-andro
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\CodeABarre.AssemblyInfo.cs
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\CodeABarre.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\CodeABarre.sourcelink.json
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\CodeABarre.runtimeconfig.json
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\CodeABarre.dll
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\CodeABarre.pdb
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre.apk
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre.aab
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre-Signed.aab
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre-Signed.apk
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\com.companyname.codeabarre-Signed.apk.idsig
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\XamlC.stamp
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\CodeABarre.csproj.Up2Date
 C:\Users\ASUS\Downloads\codeABare-1-main\codeABare-1-main\obj\Debug\net8.0-android\CodeABarre.dll

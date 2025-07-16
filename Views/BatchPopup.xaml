@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+               x:Class="CodeABarre.Views.BatchPopup">
+
+    <Grid BackgroundColor="#00000050" 
+          Padding="{OnPlatform iOS='20', Android='20', Default='20'}">
+
+        <Frame Padding="{OnPlatform iOS='20', Android='20', Default='20'}"
+               CornerRadius="16"
+               BackgroundColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               WidthRequest="{OnPlatform iOS='300', Android='300', Default='320'}"
+               MaximumWidthRequest="400"
+               HasShadow="True">
+
+            <VerticalStackLayout Spacing="{OnPlatform iOS='12', Android='12', Default='18'}">
+
+                <!-- === Batch Info === -->
+                <Label Text="{Binding Code}"
+                       FontSize="{OnPlatform iOS='20', Android='20', Default='22'}"
+                       FontAttributes="Bold"
+                       TextColor="#1F2937"
+                       HorizontalOptions="Center" />
+
+                <Label Text="{Binding ProductName, StringFormat='Produit: {0}'}"
+                       FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                       TextColor="#6B7280"
+                       HorizontalOptions="Center" />
+
+                <!-- === Stock Entry === -->
+                <Frame Padding="0"
+                       BackgroundColor="#F3F4F6"
+                       CornerRadius="8"
+                       HasShadow="False"
+                       Margin="0,5">
+                    <Entry x:Name="StockEntry"
+                           Placeholder="Entrer la quantité de stock..."
+                           Keyboard="Numeric"
+                           FontSize="{OnPlatform iOS='14', Android='14', Default='14'}"
+                           TextColor="#111827"
+                           PlaceholderColor="#9CA3AF"
+                           Margin="10,0" />
+                </Frame>
+
+                <!-- === Check Stock Button === -->
+                <Button Text="Vérifier le stock"
+                        Clicked="OnCheckStockClicked"
+                        BackgroundColor="#3B82F6"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        HeightRequest="{OnPlatform iOS='40', Android='40', Default='44'}"
+                        CornerRadius="8" />
+
+                <!-- === Result Message === -->
+                <Label x:Name="MessageLabel"
+                       FontSize="{OnPlatform iOS='12', Android='12', Default='14'}"
+                       TextColor="DarkGreen"
+                       HorizontalOptions="Center"
+                       FontAttributes="Italic" />
+
+                <!-- === Toggle Inventory Picker Visibility === -->
+                <HorizontalStackLayout VerticalOptions="Center">
+                    <CheckBox x:Name="ShowInventoryCheckBox"
+                              IsChecked="False"
+                              CheckedChanged="OnShowInventoryCheckBoxChanged" />
+                    <Label Text="Afficher le ComboBox d'inventaire"
+                           VerticalOptions="Center"
+                           Margin="8,0,0,0" />
+                </HorizontalStackLayout>
+
+                <!-- === Inventory Picker === -->
+                <StackLayout x:Name="InventoryPickerContainer" IsVisible="False">
+                    <dxe:ComboBoxEdit x:Name="InventoryPicker"
+                                      LabelText="Sélectionner un inventaire"
+                                      LabelFontSize="{OnPlatform iOS='14', Android='14', Default='14'}"
+                                      TextFontSize="{OnPlatform iOS='14', Android='14', Default='14'}"
+                                      TextColor="#111827"
+                                      BackgroundColor="#F3F4F6"
+                                      HeightRequest="{OnPlatform iOS='50', Android='50', Default='50'}"
+                                      Margin="0,5"
+                                      VerticalOptions="Center" />
+                </StackLayout>
+
+                <!-- === Floating Action Button (Add Inventory) === -->
+                <Button Grid.Row="2"
+                        x:Name="AddInventoryButton"
+                        Text="Ajouter un inventaire"
+                        Clicked="OnShowInventoryPopupClicked"
+                        FontAttributes="Bold"
+                        BackgroundColor="#0078D7"
+                        TextColor="White"
+                        CornerRadius="8" />
+
+                <!-- === Final Add Button === -->
+                <Button Text="Ajouter à la ligne d'inventaire"
+                        Clicked="OnAddToInventoryClicked"
+                        BackgroundColor="#10B981"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        HeightRequest="{OnPlatform iOS='40', Android='40', Default='44'}"
+                        CornerRadius="8" />
+
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
+</toolkit:Popup>

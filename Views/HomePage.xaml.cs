@@ -29,11 +29,11 @@ namespace CodeABarre.Views
             BindingContext = _viewModel;
         }
 
-        public HomePage(ObservableCollection<ProductModel> products, Action<string> deleteCallback, ObservableCollection<BatchModel> scannedLots)
+        public HomePage(ObservableCollection<ProductModel> products, Action<string> deleteCallback, ObservableCollection<BatchModel> scannedLots, Warehouse selectedWarehouse = null)
         {
             InitializeComponent();
 
-            _viewModel = new HomePageViewModel(products, deleteCallback, ProductModel.GetConnection());
+            _viewModel = new HomePageViewModel(products, deleteCallback, ProductModel.GetConnection(), selectedWarehouse);
             _viewModel.ScannedLots = scannedLots;
             BindingContext = _viewModel;
         }
@@ -89,7 +89,20 @@ namespace CodeABarre.Views
                 Console.WriteLine(ex);
             }
         }
-
+        private async void OnBatchTapped(object sender, EventArgs e)
+        {
+            try
+            {
+                if (sender is Frame frame && frame.BindingContext is BatchModel batch)
+                {
+                    _viewModel.ShowBatchPopup(batch, _viewModel.SelectedWarehouse);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
         private void FloatingButton_Clicked(object sender, EventArgs e)
         {
             try
@@ -106,12 +119,10 @@ namespace CodeABarre.Views
         {
             var products = _viewModel.Products.ToList();
             var connection = ProductModel.GetConnection();
-
             var popup = new ProductListPopup(products, connection, product =>
             {
                 _viewModel.Products.Remove(product);
             });
-
             this.ShowPopup(popup);
         }
 

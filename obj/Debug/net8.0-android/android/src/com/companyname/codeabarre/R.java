@@ -11934,7 +11934,7 @@ public final class R {
     public static final int reminder=0x7f080147;
     public static final int scan=0x7f080148;
     public static final int searchicon=0x7f080149;
-    public static final int splash=0x7f08014a;
+    public static final int systmtc=0x7f08014a;
     public static final int test_level_drawable=0x7f08014b;
     public static final int tooltip_frame_dark=0x7f08014c;
     public static final int tooltip_frame_light=0x7f08014d;
