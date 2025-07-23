@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeABarre")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c0b0e18384d626279afb04f7473a2c3c6f34a0fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+723d86f535e4860cdc98f669e765d214421d679c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeABarre")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeABarre")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeABarre")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6cd633a0003086317a582be489eb3a08d54103cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+723d86f535e4860cdc98f669e765d214421d679c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeABarre")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeABarre")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

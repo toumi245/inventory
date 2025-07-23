@@ -11,6 +11,15 @@ namespace CodeABarre.ViewModels
     public class SelectableProductModel : ProductModel, INotifyPropertyChanged
     {
         private bool _isSelected;
+        private int _realStock;
+        public int realStock
+        {
+            get => _realStock;
+            set
+            {
+                _realStock = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelected)));    }
+        }
         public bool IsSelected
         {
             get => _isSelected;

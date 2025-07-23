@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using CodeABarre.Models;
 using MySqlConnector;
-using CodeABarre.Helpers;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace CodeABarre.Views;
@@ -18,6 +17,7 @@ public partial class InventoryPopUp : Popup
          _warehouseId = warehouseId;
          WarehouseIdLabel.Text = warehouseId.ToString();
     }
+    
     private async void OnAddClicked(object sender, EventArgs e)
     {
         string nameToInsert = NameEntry?.Text?.Trim();

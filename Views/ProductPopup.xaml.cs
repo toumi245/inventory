@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Maui.Views;
 using CodeABarre.Models;
-using CodeABarre.Helpers;
 using MySqlConnector;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
@@ -12,6 +11,7 @@ public partial class ProductPopup : Popup
     private readonly Action<ProductModel> _onProductAddedToInventory;
     private Warehouse _selectedWarehouseFromHome;
     private ProductModel _product;
+
 
     public ProductPopup(ProductModel product, ConnectionModel connection, Action<ProductModel> onProductAddedToInventory, Warehouse selectedWarehouseFromHome)
     {
@@ -156,16 +156,22 @@ public partial class ProductPopup : Popup
     private void OnShowInventoryPopupClicked(object sender, EventArgs e)
     {
         int warehouseIdToPass = _selectedWarehouseFromHome?.Id ?? 0;
+       
+
 
         if (warehouseIdToPass == 0)
         {
             Application.Current.MainPage.DisplayAlert("Erreur", "Veuillez sélectionner un entrepôt sur la page d'accueil.", "OK");
             return;
         }
-
+         if (string.IsNullOrEmpty(StockEntry.Text) || !int.TryParse(StockEntry.Text, out int realStock))
+        {
+             Application.Current.MainPage.DisplayAlert("Attention", "Veuillez entrer une valeur de stock.", "OK");
+            return;
+        }
         if (Application.Current.MainPage is Page page)
         {
-            var popup = new InventoryPopUp(_connection, warehouseIdToPass);
+            var popup = new InventoryLinePopup(_connection, warehouseIdToPass,_product,realStock, this, _onProductAddedToInventory);
             page.ShowPopup(popup);
         }
         else

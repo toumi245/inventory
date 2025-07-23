@@ -1,6 +1,5 @@
 using CommunityToolkit.Maui.Views;
 using CodeABarre.Models;
-using CodeABarre.Helpers;
 using MySqlConnector;
 
 namespace CodeABarre.Views;
@@ -11,6 +10,8 @@ public partial class BatchPopup : Popup
     private readonly Action<BatchModel> _onBatchAddedToInventory;
     private Warehouse _selectedWarehouseFromHome;
     private BatchModel _batch;
+    private int _realStock;
+    private ProductModel _product;
 
     public BatchPopup(BatchModel batch, ConnectionModel connection, Action<BatchModel> onBatchAddedToInventory, Warehouse selectedWarehouseFromHome)
     {
@@ -20,6 +21,7 @@ public partial class BatchPopup : Popup
         _batch = batch ?? throw new ArgumentNullException(nameof(batch));
         _onBatchAddedToInventory = onBatchAddedToInventory;
         _selectedWarehouseFromHome = selectedWarehouseFromHome;
+      //  _realStock = realStock;
 
         BindingContext = _batch;
 
@@ -79,7 +81,7 @@ public partial class BatchPopup : Popup
     // ==============================
     // Add to Inventory Logic
     // ==============================
-    private async void OnAddToInventoryClicked(object sender, EventArgs e)
+    private async void OnAddToInventoryLineClicked(object sender, EventArgs e)
     {
         await Application.Current.MainPage.DisplayAlert("Debug", $"_batch.Id: {_batch.Id}, Code: {_batch.Code}", "OK");
         await Application.Current.MainPage.DisplayAlert("DEBUG", $"ProductId: {_batch.ProductId}", "OK");
@@ -131,6 +133,7 @@ public partial class BatchPopup : Popup
     // ==============================
     // Toggle Picker Visibility
     // ==============================
+    
     private void OnShowInventoryCheckBoxChanged(object sender, CheckedChangedEventArgs e)
     {
         InventoryPickerContainer.IsVisible = e.Value;
@@ -140,7 +143,7 @@ public partial class BatchPopup : Popup
     // ==============================
     // Show Add Inventory Popup
     // ==============================
-    private void OnShowInventoryPopupClicked(object sender, EventArgs e)
+    private void OnAddInventoryAndInventorylineClicked(object sender, EventArgs e)
 {
     int warehouseIdToPass = _selectedWarehouseFromHome?.Id ?? 0;
 
@@ -149,17 +152,24 @@ public partial class BatchPopup : Popup
         Application.Current.MainPage.DisplayAlert("Erreur", "Veuillez sélectionner un entrepôt sur la page d'accueil.", "OK");
         return;
     }
-
     if (Application.Current.MainPage is Page page)
     {
-        // Fermer le popup courant AVANT d’ouvrir le nouveau
-        this.Close();
 
         // Ouvre le popup d’inventaire APRÈS une petite attente (sinon bug Android)
         Device.BeginInvokeOnMainThread(async () =>
         {
+            
             await Task.Delay(200); // 200ms pour laisser le temps de fermer
-            var popup = new InventoryPopUp(_connection, warehouseIdToPass);
+            int.TryParse(StockEntry.Text, out int realStock);
+
+            var popup = new BatchInventoryLinePopup(_batch,
+                                                _connection,
+                                                warehouseIdToPass,
+                                                _product,
+                                                realStock,
+                                                this,
+                                                _onBatchAddedToInventory);
+        
             await page.ShowPopupAsync(popup);
         });
     }

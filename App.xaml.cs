@@ -12,7 +12,7 @@ namespace CodeABarre
 
                 var myConnection = new ConnectionModel
                 {
-                    Server = "192.168.1.37",
+                    Server = "192.168.137.33",
                     Port = 3306,
                     Database = "batch_test_workman",
                     User = "root",

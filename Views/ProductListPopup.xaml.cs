@@ -84,7 +84,7 @@ public partial class ProductListPopup : Popup
 
                     cmd.Parameters.AddWithValue("@product", product.Id);
                     cmd.Parameters.AddWithValue("@inventory", selectedInventory.Id);
-                    cmd.Parameters.AddWithValue("@real_stock", product.ActualStock); // Or set to 0 or another value as needed
+                    cmd.Parameters.AddWithValue("@real_stock", product.realStock); // Or set to 0 or another value as needed
                     cmd.Parameters.AddWithValue("@theorical_real_stock", product.ActualStock); // Or set to 0 or another value as needed
 
                     await cmd.ExecuteNonQueryAsync();

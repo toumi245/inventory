@@ -231,14 +231,6 @@
                                     CornerRadius="10"
                                     HeightRequest="48"
                                     HorizontalOptions="Fill" />
-
-                            <Button Text="Show All batch"
-                                    BackgroundColor="#0078D7"
-                                    TextColor="White"
-                                    FontAttributes="Bold"
-                                    CornerRadius="10"
-                                    HeightRequest="48"
-                                    HorizontalOptions="Fill" />
                         </VerticalStackLayout>
                     </Frame>
                 </VerticalStackLayout>

@@ -67,7 +67,7 @@
                     <CheckBox x:Name="ShowInventoryCheckBox"
                               IsChecked="False"
                               CheckedChanged="OnShowInventoryCheckBoxChanged" />
-                    <Label Text="Show Inventory ComboBox"
+                    <Label Text="Select inventory"
                            VerticalOptions="Center"
                            Margin="8,0,0,0" />
                 </HorizontalStackLayout>
@@ -88,7 +88,7 @@
                 <!-- === Floating Action Button (Add Inventory) === -->
                 <Button Grid.Row="2"
                         x:Name="AddInventoryButton"
-                        Text="Add inventory"
+                        Text="Add inventory and inventory line"
                         Clicked="OnShowInventoryPopupClicked"
                         FontAttributes="Bold"
                         BackgroundColor="#0078D7"

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+    x:Class="CodeABarre.Views.BatchInventoryLinePopup">
+
+    <Grid BackgroundColor="#00000080" 
+          Padding="{OnPlatform iOS='20', Android='20', Default='20'}">
+        <Frame 
+            BackgroundColor="White"
+            CornerRadius="20"
+            WidthRequest="{OnPlatform iOS='320', Android='320', Default='420'}"
+            MaximumWidthRequest="450"
+            HeightRequest="{OnPlatform iOS='520', Android='520', Default='620'}"
+            MaximumHeightRequest="650"
+            Padding="{OnPlatform iOS='20', Android='20', Default='25'}"
+            HasShadow="True"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+
+            <ScrollView>
+                <VerticalStackLayout Spacing="{OnPlatform iOS='16', Android='16', Default='20'}">
+
+                    <!-- Header -->
+                    <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                        <Label Text="📦" 
+                               FontSize="32" 
+                               HorizontalOptions="Center" />
+                        <Label Text="New Inventory" 
+                               FontAttributes="Bold" 
+                               FontSize="{OnPlatform iOS='20', Android='20', Default='24'}"
+                               TextColor="#1F2937"
+                               HorizontalOptions="Center" />
+                        <Label Text="Create a new inventory and inventory line" 
+                               FontSize="{OnPlatform iOS='12', Android='12', Default='14'}"
+                               TextColor="#6B7280"
+                               HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+
+                    <!-- Name -->
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📝 Name" 
+                               FontAttributes="Bold" 
+                               FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                               TextColor="#374151" />
+                        <Frame CornerRadius="12" 
+                               BackgroundColor="#F9FAFB" 
+                               Padding="15" 
+                               HasShadow="False"
+                               BorderColor="#E5E7EB">
+                            <Entry x:Name="NameEntry"
+                                   Placeholder="Enter inventory name"
+                                   BackgroundColor="Transparent"
+                                   FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                                   TextColor="#111827"
+                                   PlaceholderColor="#9CA3AF" />
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Warehouse -->
+                    <VerticalStackLayout Spacing="6">
+                        <Label x:Name="WarehouseIdLabe" Text="Warehouse ID:" FontAttributes="Bold" />
+                        <Label x:Name="WarehouseIdLabel"
+                             Text="🏢 Warehouse ID" 
+                               FontAttributes="Bold" 
+                               FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                               TextColor="#374151" />
+
+                    </VerticalStackLayout>
+
+                    <!-- Reference -->
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🏷️ Reference" 
+                               FontAttributes="Bold" 
+                               FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                               TextColor="#374151" />
+                        <Frame CornerRadius="12" 
+                               BackgroundColor="#F9FAFB" 
+                               Padding="15" 
+                               HasShadow="False"
+                               BorderColor="#E5E7EB">
+                            <Entry x:Name="ReferenceEntry"
+                                   Placeholder="Enter reference number"
+                                   BackgroundColor="Transparent"
+                                   FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                                   TextColor="#111827"
+                                   PlaceholderColor="#9CA3AF" />
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Note -->
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📝 Note" 
+                               FontAttributes="Bold" 
+                               FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                               TextColor="#374151" />
+                        <Frame CornerRadius="12" 
+                               BackgroundColor="#F9FAFB" 
+                               Padding="15" 
+                               HasShadow="False"
+                               BorderColor="#E5E7EB">
+                            <Editor x:Name="NoteEntry"
+                                    Placeholder="Enter additional notes..."
+                                    AutoSize="TextChanges"
+                                    BackgroundColor="Transparent"
+                                    FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                                    TextColor="#111827"
+                                    PlaceholderColor="#9CA3AF"
+                                    HeightRequest="{OnPlatform iOS='90', Android='90', Default='110'}"/>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Date -->
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📅 Date" 
+                               FontAttributes="Bold" 
+                               FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                               TextColor="#374151" />
+                        <Frame CornerRadius="12" 
+                               BackgroundColor="#F9FAFB" 
+                               Padding="12" 
+                               HasShadow="False"
+                               BorderColor="#E5E7EB">
+                            <DatePicker x:Name="DatePicker"
+                                        BackgroundColor="Transparent"
+                                        FontSize="{OnPlatform iOS='14', Android='14', Default='16'}"
+                                        TextColor="#111827"
+                                        HorizontalOptions="Fill" />
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Buttons -->
+                    <VerticalStackLayout Spacing="12" Margin="0,10,0,0">
+                        <Button 
+                            Text="✅ Create Inventory and inventory line"
+                            Clicked="OnAddClicked"
+                            BackgroundColor="#10B981"
+                            TextColor="White"
+                            CornerRadius="12"
+                            FontAttributes="Bold"
+                            FontSize="{OnPlatform iOS='16', Android='14', Default='12'}"
+                            HeightRequest="{OnPlatform iOS='50', Android='50', Default='55'}" />
+
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Frame>
+    </Grid>
+</toolkit:Popup>

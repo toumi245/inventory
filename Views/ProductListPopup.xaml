@@ -26,7 +26,12 @@
                                 <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" VerticalOptions="Center"/>
                                 <VerticalStackLayout>
                                     <Label Text="{Binding Name, StringFormat='Name: {0}'}" FontSize="16"/>
-                                    <Label Text="{Binding ActualStock, StringFormat='Stock: {0}'}" FontSize="16"/>
+                                    <Label Text="{Binding ActualStock, StringFormat='Stock : {0}'}" FontSize="16"/>
+                                    <Entry
+                                        Placeholder="Entrer stock réel"
+                                        Text="{Binding realStock, Mode=TwoWay}"
+                                        Keyboard="Numeric"
+                                        WidthRequest="100"/>
                                 </VerticalStackLayout>
                             </HorizontalStackLayout>
                         </Frame>

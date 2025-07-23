@@ -22346,7 +22346,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -22354,7 +22354,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -22368,10 +22368,10 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -22379,10 +22379,10 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -22418,7 +22418,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -22426,7 +22426,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -22459,7 +22459,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -22467,7 +22467,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -23241,7 +23241,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -23249,7 +23249,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -23263,10 +23263,10 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -23274,10 +23274,10 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -23313,7 +23313,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -23321,7 +23321,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -23354,7 +23354,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -23362,7 +23362,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -24122,7 +24122,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -24130,7 +24130,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -24144,10 +24144,10 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -24155,10 +24155,10 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -24194,7 +24194,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -24202,7 +24202,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -24235,7 +24235,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -24243,7 +24243,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -25003,7 +25003,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -25011,7 +25011,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -25025,10 +25025,10 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -25036,10 +25036,10 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -25075,7 +25075,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -25083,7 +25083,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -25116,7 +25116,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -25124,7 +25124,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -25884,7 +25884,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -25892,7 +25892,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -25906,10 +25906,10 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -25917,10 +25917,10 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -25956,7 +25956,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -25964,7 +25964,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -25997,7 +25997,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -26005,7 +26005,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -26765,7 +26765,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -26773,7 +26773,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -26787,10 +26787,10 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -26798,10 +26798,10 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -26837,7 +26837,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -26845,7 +26845,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -26878,7 +26878,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -26886,7 +26886,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -27646,7 +27646,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -27654,7 +27654,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -27668,10 +27668,10 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -27679,10 +27679,10 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -27718,7 +27718,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -27726,7 +27726,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -27759,7 +27759,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -27767,7 +27767,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -28527,7 +28527,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -28535,7 +28535,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXCollectionView.i.dll": {
-            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXListView.xcframework/Info.plist;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64_x86_64-simulator/DXListView.framework/Info.plist;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Assets.car;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/DXListView;.resources/DXListView.xcframework/ios-arm64/DXListView.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.CollectionView.dll": {
             "related": ".xml"
@@ -28549,10 +28549,10 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -28560,10 +28560,10 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXEditors.i.dll": {
-            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXEditors.xcframework/Info.plist;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64_x86_64-simulator/DXEditors.framework/Info.plist;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Assets.car;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/DXEditors;.resources/DXEditors.xcframework/ios-arm64/DXEditors.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DXNavigation.i.dll": {
-            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXNavigation.xcframework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64_x86_64-simulator/DXNavigation.framework/Info.plist;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/DXNavigation;.resources/DXNavigation.xcframework/ios-arm64/DXNavigation.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Controls.dll": {
             "related": ".xml"
@@ -28599,7 +28599,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -28607,7 +28607,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXGrid.i.dll": {
-            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXGrid.xcframework/Info.plist;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64_x86_64-simulator/DXGrid.framework/Info.plist;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Assets.car;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/DXGrid;.resources/DXGrid.xcframework/ios-arm64/DXGrid.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.DataGrid.dll": {
             "related": ".xml"
@@ -28640,7 +28640,7 @@
         },
         "compile": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"
@@ -28648,7 +28648,7 @@
         },
         "runtime": {
           "lib/net8.0-ios15.4/DXScheduler.i.dll": {
-            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/manifest"
+            "related": ".resources/DXScheduler.xcframework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64_x86_64-simulator/DXScheduler.framework/Info.plist;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Assets.car;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/DXScheduler;.resources/DXScheduler.xcframework/ios-arm64/DXScheduler.framework/Info.plist;.resources/manifest"
           },
           "lib/net8.0-ios15.4/DevExpress.Maui.Scheduler.dll": {
             "related": ".xml"

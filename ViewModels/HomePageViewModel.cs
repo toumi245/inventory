@@ -248,7 +248,10 @@ namespace CodeABarre.ViewModels
         {
             if (Application.Current.MainPage is Page page)
             {
-                var popup = new ProductPopup(product, _connection, (p) => Products.Remove(p),selectedWarehouse);
+                var popup = new ProductPopup(product, _connection, (p) => {
+              var toRemove = Products.FirstOrDefault(x => x.Id == p.Id);
+                if (toRemove != null) Products.Remove(toRemove);
+                },selectedWarehouse);
                 await page.ShowPopupAsync(popup);
             }
         }

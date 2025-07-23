@@ -88,16 +88,16 @@
                 <!-- === Floating Action Button (Add Inventory) === -->
                 <Button Grid.Row="2"
                         x:Name="AddInventoryButton"
-                        Text="Ajouter un inventaire"
-                        Clicked="OnShowInventoryPopupClicked"
+                        Text="Add Inventory And inventory line"
+                        Clicked="OnAddInventoryAndInventorylineClicked"
                         FontAttributes="Bold"
                         BackgroundColor="#0078D7"
                         TextColor="White"
                         CornerRadius="8" />
 
                 <!-- === Final Add Button === -->
-                <Button Text="Ajouter à la ligne d'inventaire"
-                        Clicked="OnAddToInventoryClicked"
+                <Button Text="add inventory line"
+                        Clicked="OnAddToInventoryLineClicked"
                         BackgroundColor="#10B981"
                         TextColor="White"
                         FontAttributes="Bold"
